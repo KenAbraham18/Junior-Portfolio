@@ -1,3 +1,27 @@
 body {
   background-color: #E1C699;
 }
+.button {
+  background-color: #000000; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #E1C690; 
+  color: black; 
+  border: 2px solid #000000;
+}
+
+.button1:hover {
+  background-color: #9a652e;
+  color: white;
+}
+
