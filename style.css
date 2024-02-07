@@ -1,27 +1,84 @@
+/* styles.css file */
 body {
-  background-color: #E1C699;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E1C699; /* Updated background color */
 }
-.button {
-  background-color: #000000; 
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #9A652E; /* Change to desired navbar background color */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.navbar a {
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.button1 {
-  background-color: #E1C690; 
-  color: black; 
-  border: 2px solid #000000;
+  color: #FFFFFF; /* Change to desired link color */
 }
 
-.button1:hover {
-  background-color: #9a652e;
-  color: white;
+.intro img {
+  display: block; /* This ensures the image is treated as a block-level element */
+  margin: 0 auto; /* This will center the image within its container */
+  max-width: 100%; /* This ensures the image is responsive and does not overflow its container */
 }
 
+.intro {
+  text-align: center; /* Center the content horizontally */
+  padding: 20px 0; /* Add some padding at the top and bottom */
+}
+
+
+
+
+.projects {
+  display: flex;
+  justify-content: center; /* This will center the child elements */
+  flex-wrap: wrap; /* This allows the items to wrap to the next line if the space is not sufficient */
+  gap: 1em; /* This keeps space between the items */
+  padding: 1em; /* This adds some padding around the whole container */
+}
+
+.project {
+  flex: 0 1 calc(33.333% - 1em); /* This sets the basis for each item to a third of the container width, subtracting the gap */
+  margin: auto; /* This will apply auto margins on all sides, centering the divs if they are not three in a row */
+  padding: 1em;
+  box-sizing: border-box; /* This ensures padding is included in the width calculation */
+}
+
+/* Additional styles to ensure the images within each project are responsive */
+.project img {
+  width: 100%; /* This makes the image take the full width of its container */
+  height: auto; /* This maintains the aspect ratio of the image */
+  display: block; /* This makes sure the image is on its own line */
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 1em;
+}
+
+.project {
+  padding: 1em;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional, for rounded corners on images */
+}
+
+.footer {
+  text-align: center;
+  padding: 1em;
+  background: #f8f8f8; /* Change to desired footer background color */
+}
