@@ -6,6 +6,48 @@ body {
   background-color: #E1C699; /* Updated background color */
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/kerala.jpg'); /* Update with the correct path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em; /* Adjust the gap between buttons as needed */
+  position: absolute; /* Position the container absolutely within its relative parent */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.button {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  padding: 1em 2em; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+}
+
+
+
+
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
